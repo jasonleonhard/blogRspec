@@ -31,6 +31,7 @@ gb
 gco master
 gd
 gm _1 master
+gst
 
 # repeating similarly
 gb _2
