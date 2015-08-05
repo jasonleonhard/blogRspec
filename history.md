@@ -15,7 +15,8 @@ gb simpleRspecWorking
 gb temp
 gco master # prob should have created new branch insead of working from master
 git push --set-upstream origin master
+gd temp master # show now master changed
 gm temp master
 sync "k"
 gm master simpleRspecWorking
-
+gb -d temp
