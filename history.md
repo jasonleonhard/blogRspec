@@ -51,6 +51,22 @@ mkdir spec/features
 touch spec/features/add_posts_rspec.rb
 
 # code spec/features/add_posts_rspec.rb
+# rails lines added to spec/models/post_spec.rb
+
+require 'rails_helper'
+
+RSpec.describe Post, type: :model do
+  # pending "add some examples to (or delete) #{__FILE__}"
+  before(:all)do 
+    @post = Post.new(body:"My Body", title:"My Title")
+  end
+  it "should have a matching body" do
+    expect(@post.body).to eq("My Body")
+  end
+end
+
+
+
 rspec spec/features/add_posts_rspec.rb # will fail bc no routes
 
 # routes.rb 
