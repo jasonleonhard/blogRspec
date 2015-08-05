@@ -81,8 +81,15 @@ rspec spec/features/add_posts_rspec.rb
 <%= @post.title %>
 <%= @post.body %>
 
-rspec spec/features/add_posts_rspec.rb 
-# should now pass
+rspec spec/features/add_posts_rspec.rb # should now pass
+sync "capybara example done"
+gst
+gb
+gco master
+gm capybara
+gd capybara
+gb
+
 
 # basically write tests to fail, then succeed in similar manner
 # when failing read rspecs Failure/Error:  to get an idea what failed
