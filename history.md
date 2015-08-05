@@ -20,3 +20,19 @@ gm temp master
 sync "k"
 gm master simpleRspecWorking
 gb -d temp
+
+# should actually do this flow
+
+gb _1
+gco _1
+(do work, save files)
+sync "_1"
+gb
+gco master
+gd
+gm _1 master
+
+# repeating similarly
+gb _2
+gco _2
+..........
