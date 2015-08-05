@@ -17,4 +17,5 @@ gco master # prob should have created new branch insead of working from master
 git push --set-upstream origin master
 gm temp master
 sync "k"
+gm master simpleRspecWorking
 
